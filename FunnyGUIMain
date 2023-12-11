@@ -1,0 +1,532 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Frame_3 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Frame_4 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local TextBox = Instance.new("Frame")
+local TextBox_2 = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Frame_5 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local Speed = Instance.new("ImageButton")
+local UICorner_9 = Instance.new("UICorner")
+local Fly = Instance.new("ImageButton")
+local UICorner_10 = Instance.new("UICorner")
+local Noclip = Instance.new("ImageButton")
+local UICorner_11 = Instance.new("UICorner")
+local Panic = Instance.new("ImageButton")
+local UICorner_12 = Instance.new("UICorner")
+
+-- Properties
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.DisplayOrder = 2147483647
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.BorderColor3 = Color3.new(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.172549039, 0, 0.419550955, 0)
+Frame.Size = UDim2.new(0, 388, 0, 206)
+
+UICorner.Parent = Frame
+UICorner.CornerRadius = UDim.new(0, 5)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_2.BorderColor3 = Color3.new(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(-0.000794007618, 0, -0.109105051, 0)
+Frame_2.Size = UDim2.new(0, 388, 0, 25)
+
+UICorner_2.Parent = Frame_2
+UICorner_2.CornerRadius = UDim.new(0, 3)
+
+Frame_3.Name = "Frame"
+Frame_3.Parent = Frame_2
+Frame_3.Active = false
+Frame_3.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+Frame_3.BorderColor3 = Color3.new(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.936270952, 0, -0.00214477535, 0)
+Frame_3.Selectable = false
+Frame_3.Size = UDim2.new(0, 25, 0, 25)
+Frame_3.Font = Enum.Font.Unknown
+Frame_3.Text = "X"
+Frame_3.TextColor3 = Color3.new(1, 0.34902, 0.34902)
+Frame_3.TextScaled = true
+Frame_3.TextWrapped = true
+
+UICorner_3.Parent = Frame_3
+UICorner_3.CornerRadius = UDim.new(0, 5)
+
+Frame_4.Name = "Frame"
+Frame_4.Parent = Frame_2
+Frame_4.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+Frame_4.BackgroundTransparency = 11
+Frame_4.BorderColor3 = Color3.new(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.0909999982, 0, 0.0780000016, 0)
+Frame_4.Size = UDim2.new(0, 289, 0, 22)
+Frame_4.Font = Enum.Font.Unknown
+Frame_4.Text = "Cones Executor"
+Frame_4.TextColor3 = Color3.new(1, 1, 1)
+Frame_4.TextScaled = true
+Frame_4.TextWrapped = true
+Frame_4.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_4.Parent = Frame_4
+UICorner_4.CornerRadius = UDim.new(0, 5)
+
+TextBox.Name = "TextBox"
+TextBox.Parent = Frame
+TextBox.Active = true
+TextBox.BackgroundColor3 = Color3.new(0.952941, 0.576471, 0.25098)
+TextBox.BorderColor3 = Color3.new(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0412371121, 0, 0.0631067976, 0)
+TextBox.Selectable = true
+TextBox.Size = UDim2.new(0, 326, 0, 163)
+
+TextBox_2.Parent = TextBox
+TextBox_2.BackgroundColor3 = Color3.new(0.431373, 0.360784, 0.952941)
+TextBox_2.BackgroundTransparency = 11
+TextBox_2.BorderColor3 = Color3.new(0, 0, 0)
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(0.0160000101, 0, 0.00199993118, 0)
+TextBox_2.Size = UDim2.new(0, 320, 0, 162)
+TextBox_2.Font = Enum.Font.SourceSansBold
+TextBox_2.PlaceholderText = "Print(\"Pretty Cool Executor!\")"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.new(1, 1, 1)
+TextBox_2.TextSize = 22
+TextBox_2.TextWrapped = true
+TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
+TextBox_2.TextYAlignment = Enum.TextYAlignment.Top
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(0.372549, 0.941176, 0.552941)
+TextButton.BorderColor3 = Color3.new(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0579999983, 0, 0.873000026, 0)
+TextButton.Size = UDim2.new(0, 100, 0, 22)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Execute"
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.TextScaled = true
+TextButton.TextSize = 14
+TextButton.TextWrapped = true
+
+UICorner_5.Parent = TextButton
+UICorner_5.CornerRadius = UDim.new(0, 5)
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.new(0.356863, 0.560784, 0.941176)
+TextButton_2.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.89175272, 0, 0.0623204485, 0)
+TextButton_2.Size = UDim2.new(0, 41, 0, 16)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "IY"
+TextButton_2.TextColor3 = Color3.new(1, 1, 1)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14
+TextButton_2.TextWrapped = true
+
+UICorner_6.Parent = TextButton_2
+UICorner_6.CornerRadius = UDim.new(0, 2)
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.new(0.356863, 0.560784, 0.941176)
+TextButton_3.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.89175272, 0, 0.173970938, 0)
+TextButton_3.Size = UDim2.new(0, 41, 0, 16)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Dex"
+TextButton_3.TextColor3 = Color3.new(1, 1, 1)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14
+TextButton_3.TextWrapped = true
+
+UICorner_7.Parent = TextButton_3
+UICorner_7.CornerRadius = UDim.new(0, 2)
+
+Frame_5.Parent = ScreenGui
+Frame_5.BackgroundColor3 = Color3.new(1, 0.729412, 0.396078)
+Frame_5.BackgroundTransparency = 0.30000001192092896
+Frame_5.BorderColor3 = Color3.new(0, 0, 0)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0.284712255, 0, 0.844738007, 0)
+Frame_5.Size = UDim2.new(0, 591, 0, 51)
+
+UICorner_8.Parent = Frame_5
+UICorner_8.CornerRadius = UDim.new(0, 5)
+
+UIListLayout.Parent = Frame_5
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 12)
+
+Speed.Name = "Speed"
+Speed.Parent = Frame_5
+Speed.Active = false
+Speed.BackgroundColor3 = Color3.new(0.709804, 0.517647, 0.282353)
+Speed.BackgroundTransparency = 0.30000001192092896
+Speed.BorderColor3 = Color3.new(0, 0, 0)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.459390849, 0, 0, 0)
+Speed.Selectable = false
+Speed.Size = UDim2.new(0, 48, 0, 48)
+Speed.Image = "rbxassetid://13492318225"
+Speed.ImageTransparency = 0.10000000149011612
+
+UICorner_9.Parent = Speed
+UICorner_9.CornerRadius = UDim.new(0, 5)
+
+Fly.Name = "Fly"
+Fly.Parent = Frame_5
+Fly.Active = false
+Fly.BackgroundColor3 = Color3.new(0.709804, 0.517647, 0.282353)
+Fly.BackgroundTransparency = 0.30000001192092896
+Fly.BorderColor3 = Color3.new(0, 0, 0)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.459390849, 0, 0, 0)
+Fly.Selectable = false
+Fly.Size = UDim2.new(0, 48, 0, 48)
+Fly.Image = "rbxassetid://4592292717"
+Fly.ImageTransparency = 0.10000000149011612
+
+UICorner_10.Parent = Fly
+UICorner_10.CornerRadius = UDim.new(0, 5)
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Frame_5
+Noclip.Active = false
+Noclip.BackgroundColor3 = Color3.new(0.709804, 0.517647, 0.282353)
+Noclip.BackgroundTransparency = 0.30000001192092896
+Noclip.BorderColor3 = Color3.new(0, 0, 0)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.459390849, 0, 0, 0)
+Noclip.Selectable = false
+Noclip.Size = UDim2.new(0, 48, 0, 48)
+Noclip.Image = "rbxassetid://9448409362"
+Noclip.ImageTransparency = 0.10000000149011612
+
+UICorner_11.Parent = Noclip
+UICorner_11.CornerRadius = UDim.new(0, 5)
+
+Panic.Name = "Panic"
+Panic.Parent = Frame_5
+Panic.Active = false
+Panic.BackgroundColor3 = Color3.new(0.709804, 0.517647, 0.282353)
+Panic.BackgroundTransparency = 0.30000001192092896
+Panic.BorderColor3 = Color3.new(0, 0, 0)
+Panic.BorderSizePixel = 0
+Panic.Position = UDim2.new(0.459390849, 0, 0, 0)
+Panic.Selectable = false
+Panic.Size = UDim2.new(0, 48, 0, 48)
+Panic.Image = "rbxassetid://14563958666"
+Panic.ImageTransparency = 0.10000000149011612
+
+UICorner_12.Parent = Panic
+UICorner_12.CornerRadius = UDim.new(0, 5)
+
+-- Scripts
+
+local function NOXROZX_fake_script() -- Frame_2.Drag GUI Script 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame.Parent, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Parent.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(NOXROZX_fake_script)()
+local function AKTUTXW_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(""..script.Parent.Parent.TextBox.TextBox.Text)()
+	end)
+end
+coroutine.wrap(AKTUTXW_fake_script)()
+local function IIZT_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	end)
+end
+coroutine.wrap(IIZT_fake_script)()
+local function ODSBZ_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+	end)
+end
+coroutine.wrap(ODSBZ_fake_script)()
+local function VXHMYN_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	local IsActive = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if IsActive == true then
+			IsActive = false
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.15), {ImageColor3 = Color3.fromRGB(255,255,255)}):Play()
+		else
+			IsActive = true
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.15), {ImageColor3 = Color3.fromRGB(157, 255, 121)}):Play()
+		end
+	end)
+	
+	
+	
+	while task.wait() do
+		if IsActive == true then
+				local chr = game.Players.LocalPlayer.Character
+				local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+					local delta = game:GetService("RunService").Heartbeat:Wait()
+					if hum.MoveDirection.Magnitude > 0 then
+							chr:TranslateBy(hum.MoveDirection * delta * 15)
+					end
+		end
+		end
+end
+coroutine.wrap(VXHMYN_fake_script)()
+local function BELFVG_fake_script() -- Fly.LocalScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	local IsActive = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if IsActive == true then
+			IsActive = false
+			script.Parent.FlyScript.FLYCONTACT.Value = false
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.15), {ImageColor3 = Color3.fromRGB(255,255,255)}):Play()
+		else
+			IsActive = true
+			script.Parent.FlyScript.FLYCONTACT.Value = true
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.15), {ImageColor3 = Color3.fromRGB(157, 255, 121)}):Play()
+		end
+	end)
+end
+coroutine.wrap(BELFVG_fake_script)()
+local function ONLTP_fake_script() -- Fly.FlyScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	--[[ INSTANCE MAKING AREA ]] --
+	
+	local Wind = Instance.new("Sound",script)
+	Wind.Name = "Wind"
+	local Flymoving = Instance.new("BoolValue",script)
+	Flymoving.Name = "Flymoving"
+	local BodyGyro = Instance.new("BodyGyro",script)
+	BodyGyro.Name = "BodyGyro"
+	BodyGyro.D = 260
+	BodyGyro.MaxTorque = Vector3.new(400000, 400000, 400000)
+	BodyGyro.P = 3000
+	local Fly = Instance.new("KeyframeSequence",script)
+	Fly.Name = "Fly"
+	local Hover = Instance.new("KeyframeSequence",script)
+	Hover.Name = "Hover"
+	local FLYMECH = Instance.new("BoolValue",script)
+	FLYMECH.Name = "FLYCONTACT"
+	local BV = Instance.new("BodyVelocity",script)
+	BV.Name = ""..tostring(BV.ClassName)
+	BV.MaxForce = Vector3.new(100000000, 100000000, 100000000)
+	BV.P = 20000
+	BV.Velocity = Vector3.new(0,0,0)
+	
+	--[[ INSTANCE MAKING AREA ]] --
+	
+	local KeyCode = Enum.KeyCode.E
+	local WindSoundEnabled = true
+	
+	local BodyVelocity = script:WaitForChild("BodyVelocity"):Clone()
+	local v3 = script.BodyGyro:Clone()
+	local Character = game.Players.LocalPlayer.Character
+	local Humanoid = Character:FindFirstChild("Humanoid") or Character:WaitForChild("Humanoid")
+	BodyVelocity.Parent = Character
+	v3.Parent = Character
+	local Sound1 = Instance.new("Sound", Character.HumanoidRootPart)
+	Sound1.SoundId = "rbxassetid://3308152153"
+	Sound1.Name = "Sound1"
+	if WindSoundEnabled == false then
+		Sound1.Volume = 0
+	end
+	local Camera = game.Workspace.Camera
+	local function u2()
+		if Humanoid.MoveDirection == Vector3.new(0, 0, 0) then
+			return Humanoid.MoveDirection
+		end
+		local v12 = (Camera.CFrame * CFrame.new((CFrame.new(Camera.CFrame.p, Camera.CFrame.p + Vector3.new(Camera.CFrame.lookVector.x, 0, Camera.CFrame.lookVector.z)):VectorToObjectSpace(Humanoid.MoveDirection)))).p - Camera.CFrame.p;
+		if v12 == Vector3.new() then
+			return v12
+		end
+		return v12.unit
+	end
+	local Flymoving = script.Flymoving
+	local TweenService = game:GetService("TweenService")
+	local UIS = game:GetService("UserInputService")
+	local Flying = false
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+			if Flying == true then
+				Humanoid:ChangeState(6)
+				v3.CFrame = game.Workspace.Camera.CFrame
+				if u2() == Vector3.new(0, 0, 0) then
+					Flymoving.Value = false
+				else
+					Flymoving.Value = true
+				end
+				TweenService:Create(BodyVelocity, TweenInfo.new(0.1), {Velocity = u2() * 120}):Play()
+			end
+	end)
+	
+	Flymoving.Changed:Connect(function(p1)
+		if p1 == true then
+			--v10:Stop()
+			Sound1:Play()
+			--v11:Play()
+			return
+		end
+		if p1 == false then
+			--v11:Stop()
+			Sound1:Stop()
+			--v10:Play()
+		end
+	end)
+	
+	local xractivated = false
+	
+	FLYMECH.Changed:Connect(function()
+		if FLYMECH.Value == true then
+				Flying = true
+				if Character:FindFirstChild("HumanoidRootPart") then
+					--v10:Play(0.1, 1, 1)
+					Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running, false)
+					Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing, false)
+					Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown, false)
+					Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall, false)
+					--Character.HumanoidRootPart.Running.Volume = 0
+					Humanoid:ChangeState(6)
+					BodyVelocity.Parent = Character.HumanoidRootPart
+					v3.Parent = Character.HumanoidRootPart
+				end
+			else
+				Flying = false
+				Flymoving.Value = false
+				Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running, true)
+				Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing, true)
+				Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown, true)
+				Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall, true)
+				--Character.HumanoidRootPart.Running.Volume = 0.65
+				Humanoid:ChangeState(8)
+				BodyVelocity.Parent = Character
+				v3.Parent = Character
+				--v10:Stop()
+				--v11:Stop()
+		end
+	end)
+end
+coroutine.wrap(ONLTP_fake_script)()
+local function VMFXCJZ_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	local IsActive = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if IsActive == true then
+			IsActive = false
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.15), {ImageColor3 = Color3.fromRGB(255,255,255)}):Play()
+		else
+			IsActive = true
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.15), {ImageColor3 = Color3.fromRGB(157, 255, 121)}):Play()
+		end
+	end)
+	
+	local function NoclipLoop()
+		if IsActive == true and game.Players.LocalPlayer.Character ~= nil then
+			for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+				if child:IsA("BasePart") and child.CanCollide == true then
+					child.CanCollide = false
+				end
+			end
+		elseif IsActive == false then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = true
+			for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+				if child:IsA("BasePart") and child.CanCollide == true then
+					child.CanCollide = true
+				end
+			end
+			end
+	end
+	Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
+end
+coroutine.wrap(VMFXCJZ_fake_script)()
+local function KESGTV_fake_script() -- Panic.LocalScript 
+	local script = Instance.new('LocalScript', Panic)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer:Kick("Panic Was Enabled")
+	end)
+end
+coroutine.wrap(KESGTV_fake_script)()
